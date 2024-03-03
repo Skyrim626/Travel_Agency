@@ -1,0 +1,136 @@
+
+.main {
+    background: gray;
+    min-height: 100vh;
+    background: url("./images/login-image.jpeg");
+    background-size: cover;
+    padding: 1rem;
+    display: flex;
+}
+.image-wrapper {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    padding: 1rem;
+    background: var(--clr-secondary-700);
+    border-radius: 20px;
+}
+
+.container * {
+    color: var(--clr-primary-900);
+}
+
+.signUp-form {
+    padding: 1rem;
+}
+
+.text-link {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: var(--clr-primary-900);
+    width: fit-content;
+}
+
+.form-control {
+    border-radius: 5px;
+    color: var(--clr-secondary-700);
+}
+
+.form-control > * {
+    color: var(--clr-secondary-700);
+}
+
+
+/* Input Group */
+.input-group:nth-child(1) {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.return-home-link {
+    width: fit-content;
+    margin-top: 0.5rem;
+    color: var(--clr-accent-100);
+}
+
+
+/* Animation */
+.animation-underline::after {
+    background: var(--clr-primary-900) !important;
+}
+
+
+/* Small */
+@media (width > 576px) {
+    
+    /* Container */
+    .container {
+        max-width: 35em;
+    }
+
+    /* Button */
+    .btn {
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+/* Medium */
+@media (width > 768px) {
+
+    /* Image Wrapper */
+    .main {
+        padding: 0;
+        background: var(--clr-secondary-700);
+    }
+
+    .image-wrapper {
+        display: block;
+        background: url("./images/login-image.jpeg");
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+        position: relative;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .login-content {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column; 
+        justify-content: flex-start;
+        text-align: start;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        color: var(--clr-primary-900);
+    }
+    
+    .login-content .btn {
+        margin: auto 0;
+    }
+    
+
+}
+
+/* Medium */
+@media (width > 992px) {
+
+    /* Image Wrapper */
+    .login-content h1 {
+        width: 70%;
+        font-size: 4.75rem;
+    }
+
+    .login-content {
+        width: 60%;
+    }
+    
+}
